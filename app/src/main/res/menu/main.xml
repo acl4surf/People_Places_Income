@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.aei2.peopleplaces.MainActivity">
+
+    <item
+        android:id="@+id/action_saved"
+        android:orderInCategory="1"
+        android:title="@string/action_saved"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_map"
+        android:orderInCategory="2"
+        android:title="@string/action_map"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_web"
+        android:orderInCategory="3"
+        android:title="@string/action_web"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/education"
+        android:title="@string/menu_edu_level"
+        app:showAsAction="ifRoom" />
+
+</menu>

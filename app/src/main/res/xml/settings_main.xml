@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="People Places Settings">
+    <EditTextPreference
+        android:defaultValue="@string/settings_latitude_default"
+        android:inputType="numberDecimal"
+        android:key="@string/settings_latitude_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/lblLatitude" />
+    <EditTextPreference
+        android:defaultValue="@string/settings_longitude_default"
+        android:inputType="numberDecimal"
+        android:key="@string/settings_longitude_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/lblLongitude" />
+
+</PreferenceScreen>

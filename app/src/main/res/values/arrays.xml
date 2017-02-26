@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pie_chart_x_data">
+        <item>@string/x_data_value_0</item>
+        <item>@string/x_data_value_1</item>
+        <item>@string/x_data_value_2</item>
+        <item>@string/x_data_value_3</item>
+        <item>@string/x_data_value_4</item>
+        <item>@string/x_data_value_5</item>
+
+    </string-array>
+</resources>

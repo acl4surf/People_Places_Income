@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">People Places Income</string>
+    <string name="lblLatitude">Latitude</string>
+    <string name="settings_latitude_key" translatable="false">latitude_key</string>
+    <string name="settings_longitude_key" translatable="false">longitude_key</string>
+    <string name="settings_latitude_default" translatable="false">0.0</string>
+    <string name="settings_longitude_default" translatable="false">0.0</string>
+    <string name="lblPause">Pause GPS</string>
+    <string name="lblResume">Resume GPS</string>
+    <string name="lblLongitude">Longitude</string>
+    <string name="lblZero">0.0</string>
+    <string name="lblBlockID">Block FIP#</string>
+    <string name="lblBlank" />
+    <string name="lblSave">Save</string>
+    <string name="incomeBelowPoverty">Below Poverty Income</string>
+    <string name="medianIncome">Median Income</string>
+    <string name="incomeLessThan25">Income Less 25K</string>
+    <string name="income25to50">Income 25-50k</string>
+    <string name="income50to100">Income 50-100k</string>
+    <string name="income100to200">Income  100-200k</string>
+    <string name="incomeGreater200">Income 200k+</string>
+    <string name="HighSchool">High School Graduate</string>
+    <string name="college">Bachelor Degree or Greater</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="action_map">Map Location</string>
+    <string name="Zero">0</string>
+    <!-- Pie Chart xData values array [CHAR LIMIT=20] -->
+    <string name="x_data_value_0">\u003c Poverty</string>
+    <string name="x_data_value_1">\u003c 25k</string>
+    <string name="x_data_value_2">25\002D50k</string>
+    <string name="x_data_value_3">50\002D100k</string>
+    <string name="x_data_value_4">100\002D200k</string>
+    <string name="x_data_value_5">200k\002B</string>
+    <string name="menu_edu_level">EDU</string>
+    <string name="action_web">US FCC</string>
+    <string name="insert_location_failed">Error inserting into location table.</string>
+    <string name="insert_location_success">Location data saved.</string>
+    <string name="insert_people_failed">Error inserting into Census table.</string>
+    <string name="insert_people_success">Census data saved.</string>
+    <string name="unknown_fipID">Unknown FIP ID</string>
+    <string name="unknown_address">Unknown Address</string>
+    <string name="internet_unavailable">No Internet Connection.</string>
+    <string name="action_delete">Delete All</string>
+    <string name="action_delete_item">Delete Address</string>
+    <string name="delete_address_failed">Failed to delete address.</string>
+    <string name="delete_address_successful">Address deleted.</string>
+    <string name="delete_data_failed">Census data failed to delete.</string>
+    <string name="delete_data_successful">Census data deleted.</string>
+    <string name="action_saved">Saved</string>
+    <string name="empty_view_title_text">Save a location.</string>
+    <string name="action_share">Share</string>
+
+</resources>
