@@ -8,6 +8,7 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.view.ActionProvider;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.ShareActionProvider;
@@ -34,6 +35,8 @@ public class CatalogActivity extends AppCompatActivity implements
     private static final int CURRENT_PEOPLE_LOADER = 1;
     private static final String LOG_TAG = CatalogActivity.class.getSimpleName();
     PlacesCursorAdapter mCursorAdapter;
+    private static final String APP_SHARE_HASHTAG = " #PeoplePlacesIncomeApp";
+    private ShareActionProvider mShareActionProvider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +107,15 @@ public class CatalogActivity extends AppCompatActivity implements
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the options menu from xml.
         getMenuInflater().inflate(R.menu.menu_catalog, menu);
+        //retrieve the share menu item
+        MenuItem item = menu.findItem(R.id.action_share);
+        mShareActionProvider =
+                (ShareActionProvider) MenuItemCompat.getActionProvider(item);
+        if (mShareActionProvider != null) {
+            mShareActionProvider.setShareIntent(createShareIntent());
+        } else {
+            Log.d(LOG_TAG, "Share Action Provider is null?");
+        }
         return true;
     }
 
@@ -114,8 +126,18 @@ public class CatalogActivity extends AppCompatActivity implements
             case R.id.action_delete:
                 // Method to delete all addresses
                 deleteAll();
+                return true;
+
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private Intent createShareIntent() {
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, APP_SHARE_HASHTAG);
+        return shareIntent;
     }
 
     private void deleteAll() {

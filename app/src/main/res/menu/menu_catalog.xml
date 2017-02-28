@@ -3,7 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.aei2.peopleplaces.CatalogActivity">
-
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/action_share"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="always" />
     <item
         android:id="@+id/action_delete"
         android:title="@string/action_delete"
